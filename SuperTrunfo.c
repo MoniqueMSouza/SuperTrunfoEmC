@@ -44,5 +44,14 @@ int main () {
     printf("Digite a quantidade de pontos turísticos na cidade. \n"); 
     scanf ("%d", &C1pontosturisticos);
 
-
+    //Exibindo as informações da Carta 1 
+    printf("Carta 1 \n"); 
+    printf("Estado: %s \n", C1estado); 
+    printf("Código: %s \n", C1codigo); 
+    printf("Nome da Cidade: %s \n", C1nome); 
+    printf("População: %d \n", C1populaçao); 
+    printf("Área: %.2f km² \n", C1area); 
+    printf("PIB: %.2f \n", C1pib); 
+    printf("Número de Pontos Turísticos: %d \n", C1pontosturisticos);
+    
 }
