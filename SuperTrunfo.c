@@ -68,6 +68,9 @@ int main () {
     printf("Digite a quantidade de pontos turísticos na cidade. \n"); 
     scanf ("%d", &C2pontosturisticos);
 
+    // Cria uma linha vazia entre as informações solicitadas ao usuário e a Carta 1
+    printf(" \n");
+
     //Exibindo as informações da Carta 1 
     printf("Carta 1 \n"); 
     printf("Estado: %s \n", C1estado); 
@@ -78,6 +81,9 @@ int main () {
     printf("PIB: %.2f \n", C1pib); 
     printf("Número de Pontos Turísticos: %d \n", C1pontosturisticos);
 
+    // Cria uma linha vazia entre as informações da Carta 1 e 2.
+    printf(" \n");
+
     //Exibindo as informações da Carta 2 
     printf("Carta 2 \n"); 
     printf("Estado: %s \n", C2estado); 
@@ -87,5 +93,8 @@ int main () {
     printf("Área: %.2f km² \n", C2area); 
     printf("PIB: %.2f \n", C2pib); 
     printf("Número de Pontos Turísticos: %d \n", C2pontosturisticos);
+
+    // Cria uma linha vazia entre as informações da Carta 2 e a próxima mensagem.
+    printf(" \n");
     
 }
