@@ -10,6 +10,8 @@ int main () {
     float C1_area;
     float C1_pib;
     int C1_pontosturisticos;
+    float C1_densidade;
+    float C1_pibperc;
 
     //Informações da Carta 2 - C2
     char C2_estado[50];
@@ -19,6 +21,8 @@ int main () {
     float C2_area;
     float C2_pib;
     int C2_pontosturisticos;
+    float C2_densidade;
+    float C2_pibperc;
 
     //Registrando as informações da Carta 1 
     printf("Primeiro, vamos registrar as informações da CARTA 1. \n"); 
@@ -71,6 +75,14 @@ int main () {
     // Cria uma linha vazia entre as informações solicitadas ao usuário e a Carta 1
     printf(" \n");
 
+    //Calcula a Densidade Populacional
+    C1_densidade =  (float)C1_populaçao / C1_area;
+    C2_densidade =  (float)C2_populaçao / C2_area;
+
+    //Calcula o PIB per Capita
+    C1_pibperc = (float)C1_pib / C1_populaçao;
+    C2_pibperc = (float)C2_pib / C2_populaçao;
+
     //Exibindo as informações da Carta 1 
     printf("Carta 1 \n"); 
     printf("Estado: %s \n", C1_estado); 
@@ -80,6 +92,8 @@ int main () {
     printf("Área: %.2f km² \n", C1_area); 
     printf("PIB: %.2f \n", C1_pib); 
     printf("Número de Pontos Turísticos: %d \n", C1_pontosturisticos);
+    printf("Densidade Populacional: %.2f hab/km² \n", C1_densidade);
+    printf("PIB per Capita: %.2f Reais \n", C1_pibperc);
 
     // Cria uma linha vazia entre as informações da Carta 1 e 2.
     printf(" \n");
@@ -93,7 +107,9 @@ int main () {
     printf("Área: %.2f km² \n", C2_area); 
     printf("PIB: %.2f \n", C2_pib); 
     printf("Número de Pontos Turísticos: %d \n", C2_pontosturisticos);
-
+    printf("Densidade Populacional: %.2f hab/km² \n", C2_densidade);
+    printf("PIB per Capita: %.2f Reais \n", C2_pibperc);
+    
     // Cria uma linha vazia entre as informações da Carta 2 e a próxima mensagem.
     printf(" \n");
     
