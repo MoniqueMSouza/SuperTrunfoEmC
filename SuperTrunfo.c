@@ -12,6 +12,7 @@ int main () {
     int C1_pontosturisticos;
     float C1_densidade;
     float C1_pibperc;
+    float C1_superpoder;
 
     //Informações da Carta 2 - C2
     char C2_estado[50];
@@ -23,6 +24,7 @@ int main () {
     int C2_pontosturisticos;
     float C2_densidade;
     float C2_pibperc;
+    float C2_superpoder;
 
     //Registrando as informações da Carta 1 
     printf("Primeiro, vamos registrar as informações da CARTA 1. \n"); 
@@ -83,6 +85,10 @@ int main () {
     C1_pibperc = (float)C1_pib / C1_populaçao;
     C2_pibperc = (float)C2_pib / C2_populaçao;
 
+    //Calcula o Super Poder das Cartas
+    C1_superpoder = (float)C1_populaçao + (float)C1_area + (float)C1_pib + (float)C1_pontosturisticos + (float)(1/C1_densidade);
+    C2_superpoder = (float)C2_populaçao + (float)C2_area + (float)C2_pib + (float)C2_pontosturisticos + (float)(1/C2_densidade);
+    
     //Exibindo as informações da Carta 1 
     printf("Carta 1 \n"); 
     printf("Estado: %s \n", C1_estado); 
@@ -94,7 +100,7 @@ int main () {
     printf("Número de Pontos Turísticos: %d \n", C1_pontosturisticos);
     printf("Densidade Populacional: %.2f hab/km² \n", C1_densidade);
     printf("PIB per Capita: %.2f Reais \n", C1_pibperc);
-
+    printf("Super Poder:%.2f \n", C1_superpoder);
     // Cria uma linha vazia entre as informações da Carta 1 e 2.
     printf(" \n");
 
@@ -109,7 +115,8 @@ int main () {
     printf("Número de Pontos Turísticos: %d \n", C2_pontosturisticos);
     printf("Densidade Populacional: %.2f hab/km² \n", C2_densidade);
     printf("PIB per Capita: %.2f Reais \n", C2_pibperc);
-    
+    printf("Super Poder: %.2f \n", C2_superpoder);
+
     // Cria uma linha vazia entre as informações da Carta 2 e a próxima mensagem.
     printf(" \n");
     
