@@ -6,7 +6,7 @@ int main () {
     char C1_estado[50];
     char C1_codigo[50];
     char C1_nome[50];
-    int C1_populaçao;
+    unsigned long int C1_populaçao;
     float C1_area;
     float C1_pib;
     int C1_pontosturisticos;
@@ -18,7 +18,7 @@ int main () {
     char C2_estado[50];
     char C2_codigo[50];
     char C2_nome[50];
-    int C2_populaçao;
+    unsigned long int C2_populaçao;
     float C2_area;
     float C2_pib;
     int C2_pontosturisticos;
@@ -39,7 +39,7 @@ int main () {
     scanf ("%s", &C1_nome); 
 
     printf("Digite o número de Habitantes. \n"); 
-    scanf ("%d", &C1_populaçao); 
+    scanf ("%lu", &C1_populaçao); 
 
     printf("Digite a área da cidade em quilômetros quadrados. \n"); 
     scanf ("%f", &C1_area); 
@@ -63,7 +63,7 @@ int main () {
     scanf ("%s", &C2_nome); 
 
     printf("Digite o número de Habitantes. \n"); 
-    scanf ("%d", &C2_populaçao); 
+    scanf ("%lu", &C2_populaçao); 
 
     printf("Digite a área da cidade em quilômetros quadrados. \n"); 
     scanf ("%f", &C2_area); 
