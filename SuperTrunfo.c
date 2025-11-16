@@ -117,6 +117,19 @@ int main () {
     printf("PIB per Capita: %.2f Reais \n", C2_pibperc);
     printf("Super Poder: %.2f \n", C2_superpoder);
 
+    // Cria uma linha vazia entre as informações da Carta 2 e Comparação de cartas.
+    printf(" \n");
+
+    //Comparando atributos da Carta 1 com a Carta 2
+    printf("Comparação de Cartas:\n");
+    printf("População, carta 1 é melhor que carta 2: %d\n", C1_populaçao > C2_populaçao);
+    printf("Área, carta 1 é melhor que carta 2: %d\n", C1_area > C2_area);
+    printf("PIB, carta 1 é melhor que carta 2: %d\n", C1_pib > C2_pib);
+    printf("Pontos Turisticos, carta 1 é melhor que carta 2: %d\n", C1_pontosturisticos > C2_pontosturisticos);
+    printf("Densidade Populacional, carta 1 é melhor que carta 2: %d\n", C1_densidade < C2_densidade);
+    printf("PIB per Capita, carta 1 é melhor que carta 2: %d\n", C1_pibperc > C2_pibperc);
+    printf("Super Poder, carta 1 é melhor que carta 2: %d\n", C1_superpoder > C2_superpoder);
+
     // Cria uma linha vazia entre as informações da Carta 2 e a próxima mensagem.
     printf(" \n");
     
