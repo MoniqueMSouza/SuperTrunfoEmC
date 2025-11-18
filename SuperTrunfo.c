@@ -122,14 +122,56 @@ int main () {
 
     //Comparando atributos da Carta 1 com a Carta 2
     printf("Comparação de Cartas:\n");
-    printf("População, carta 1 é melhor que carta 2: %d\n", C1_populaçao > C2_populaçao);
-    printf("Área, carta 1 é melhor que carta 2: %d\n", C1_area > C2_area);
-    printf("PIB, carta 1 é melhor que carta 2: %d\n", C1_pib > C2_pib);
-    printf("Pontos Turisticos, carta 1 é melhor que carta 2: %d\n", C1_pontosturisticos > C2_pontosturisticos);
-    printf("Densidade Populacional, carta 1 é melhor que carta 2: %d\n", C1_densidade < C2_densidade);
-    printf("PIB per Capita, carta 1 é melhor que carta 2: %d\n", C1_pibperc > C2_pibperc);
-    printf("Super Poder, carta 1 é melhor que carta 2: %d\n", C1_superpoder > C2_superpoder);
+    
+    //Comparando a População
+    if(C1_populaçao > C2_populaçao){
+        printf("População: Carta 1 venceu! \n");
+    }else{
+        printf("População: Carta 2 venceu! \n");
+    };
 
+    //Comparando a Área
+    if(C1_area > C2_area){
+        printf("Área: Carta 1 venceu! \n");
+    }else{
+        printf("Área: Carta 2 venceu! \n");
+    };
+
+    //Comparando o Pib
+    if(C1_pib > C2_pib){
+        printf("PIB: Carta 1 venceu! \n");
+    }else{
+        printf("PIB: Carta 2 venceu! \n");
+    };
+
+    //Comparando os Pontos Turísticos
+    if(C1_pontosturisticos > C2_pontosturisticos){
+        printf("Pontos Turísticos: Carta 1 venceu! \n");
+    }else{
+        printf("Pontos Turisticos: Carta 2 venceu! \n");
+    };    
+
+    //Comparando a Densidade
+    if(C1_densidade < C2_densidade){
+        printf("Densidade: Carta 1 venceu! \n");
+    }else{
+        printf("Densidade: Carta 2 venceu! \n");
+    };
+    
+    //Comparando o Pib Per Capita
+    if(C1_pibperc > C2_pibperc){
+        printf("PIB per Capita: Carta 1 venceu! \n");
+    }else{
+        printf("PIB per Capita: Carta 2 venceu! \n");
+    };
+   
+    //Comparando o Super Poder
+    if(C1_superpoder > C2_superpoder){
+        printf("Super Poder: Carta 1 venceu! \n");
+    }else{
+        printf("Super Poder: Carta 2 venceu! \n");
+    };
+   
     // Cria uma linha vazia entre as informações da Carta 2 e a próxima mensagem.
     printf(" \n");
     
